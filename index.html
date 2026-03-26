@@ -271,10 +271,6 @@ body {
 }
 
 /* ---- CONTACT ---- */
-/*
-  FIX: contact-item ab ek row mein hoga.
-  Icon left side, text right side — clean alignment.
-*/
 .contact-item {
   display: flex;
   align-items: center;    /* vertical center */
@@ -306,6 +302,14 @@ body {
   font-size: 14px;
   color: rgba(255,255,255,0.65);
   word-break: break-all;
+}
+.contact-item a{
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+}
+
+.contact-item a:hover{
+  color: #00f5ff;
 }
 
 /* ---- SOCIALS ---- */
@@ -434,7 +438,7 @@ body {
       <i class="fas fa-envelope"></i>
       <div>
         <h4>Email</h4>
-        <p>amitgaming8090@gmail.com</p>
+        <a href="mailto:amitgaming8090@gmail.com">amitgaming8090@gmail.com</a>
       </div>
     </div>
 
@@ -442,7 +446,7 @@ body {
       <i class="fas fa-phone"></i>
       <div>
         <h4>Phone</h4>
-        <p>+91 9992636343</p>
+        <a href="tel:+919992636343">+91 9992636343</a>
       </div>
     </div>
 
