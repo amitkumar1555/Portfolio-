@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <title>Portfolio - Aspiring Web Developer</title>
+    <link rel=\"stylesheet\" href=\"styles.css\">
+    <!--link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\"-->
+</head>
+<body>
+    <div class=\"portfolio-container\">
+        <!-- Animated Background -->
+        <div class=\"animated-bg\">
+            <img src=\"luffy.jpg\" alt=\"Background\" class=\"bg-image\">
+        </div>
+        
+        <!-- Navbar -->
+        <nav class=\"navbar\" id=\"navbar\">
+            <div class=\"nav-content\">
+                <div class=\"nav-logo\">
+                    <span class=\"logo-text\">AK</span>
+                </div>
+                <div class=\"nav-links\">
+                    <button onclick=\"scrollToSection('home')\" class=\"nav-link\">Home</button>
+                    <button onclick=\"scrollToSection('about')\" class=\"nav-link\">About</button>
+                    <button onclick=\"scrollToSection('projects')\" class=\"nav-link\">Projects</button>
+                    <button onclick=\"scrollToSection('contact')\" class=\"nav-link\">Contact</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id=\"home\" class=\"hero-section\">
+            <div class=\"hero-content\">
+                <p class=\"hero-tagline-main\">
+                    Aspiring Web Developer | Learning Modern Web Technologies
+                </p>
+                <div class=\"hero-buttons\">
+                    <button onclick=\"scrollToSection('projects')\" class=\"neon-button primary\">
+                        View Projects
+                    </button>
+                    <button onclick=\"scrollToSection('contact')\" class=\"neon-button secondary\">
+                        Get In Touch
+                    </button>
+                </div>
+                <div class=\"social-links\">
+                    <a href=\"https://github.com/amitkumar1555\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"social-icon hover-cyan\" aria-label=\"GitHub\">
+                        <i class=\"fab fa-github\"></i>
+                    </a>
+                    <a href=\"https://www.linkedin.com/in/amitkumar1555\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"social-icon hover-blue\" aria-label=\"LinkedIn\">
+                        <i class=\"fab fa-linkedin\"></i>
+                    </a>
+                    <a href=\"https://instagram.com/keir.irenic\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"social-icon hover-purple\" aria-label=\"Instagram\">
+                        <i class=\"fab fa-instagram\"></i>
+                    </a>
+                </div>
+            </div>
+            <div class=\"scroll-indicator\">
+                <div class=\"mouse\"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id=\"about\" class=\"about-section\">
+            <div class=\"section-container\">
+                <h2 class=\"section-title\">
+                    <span class=\"title-bracket\">&lt;</span>
+                    About Me
+                    <span class=\"title-bracket\">/&gt;</span>
+                </h2>
+                <div class=\"about-card\">
+                    <div class=\"about-content\">
+                        <div class=\"about-text\">
+                            <p>
+                                Hi, I'm <span class=\"highlight\">Amit Kumar</span>, a passionate beginner in web development. 
+                                I enjoy building modern, responsive websites and learning technologies like HTML, CSS, and JavaScript.
+                            </p>
+                            <p>
+                                I'm continuously improving my skills by creating projects and exploring new tools.
+                            </p>
+                        </div>
+                        <div class=\"skills-grid\">
+                            <div class=\"skill-item skill-html\">
+                                <div class=\"skill-glow\"></div>
+                                <span>HTML5</span>
+                            </div>
+                            <div class=\"skill-item skill-css\">
+                                <div class=\"skill-glow\"></div>
+                                <span>CSS</span>
+                            </div>
+                            <div class=\"skill-item skill-js\">
+                                <div class=\"skill-glow\"></div>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class=\"skill-item skill-react\">
+                                <div class=\"skill-glow\"></div>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id=\"projects\" class=\"projects-section\">
+            <div class=\"section-container\">
+                <h2 class=\"section-title\">
+                    <span class=\"title-bracket\">&lt;</span>
+                    Projects
+                    <span class=\"title-bracket\">/&gt;</span>
+                </h2>
+                <div class=\"projects-grid\">
+                    <div class=\"project-card\">
+                        <div class=\"project-icon bg-gradient-cyan-blue\">
+                            <i class=\"fas fa-sparkles\"></i>
+                        </div>
+                        <h3 class=\"project-title\">Portfolio Website</h3>
+                        <p class=\"project-description\">
+                            Personal website to showcase my skills and projects
+                        </p>
+                        <div class=\"card-glow\"></div>
+                    </div>
+
+                    <div class=\"project-card\">
+                        <div class=\"project-icon bg-gradient-purple-pink\">
+                            <i class=\"fas fa-code\"></i>
+                        </div>
+                        <h3 class=\"project-title\">Calculator App</h3>
+                        <p class=\"project-description\">
+                            A simple calculator built using HTML, CSS, and JavaScript
+                        </p>
+                        <div class=\"card-glow\"></div>
+                    </div>
+
+                    <div class=\"project-card\">
+                        <div class=\"project-icon bg-gradient-blue-purple\">
+                            <i class=\"fas fa-bolt\"></i>
+                        </div>
+                        <h3 class=\"project-title\">To-Do List App</h3>
+                        <p class=\"project-description\">
+                            A task manager with add and delete functionality
+                        </p>
+                        <div class=\"card-glow\"></div>
+                    </div>
+
+                    <div class=\"project-card\">
+                        <div class=\"project-icon bg-gradient-cyan-purple\">
+                            <i class=\"fas fa-external-link-alt\"></i>
+                        </div>
+                        <h3 class=\"project-title\">Weather App</h3>
+                        <p class=\"project-description\">
+                            Displays real-time weather using an API
+                        </p>
+                        <div class=\"card-glow\"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id=\"contact\" class=\"contact-section\">
+            <div class=\"section-container\">
+                <h2 class=\"section-title\">
+                    <span class=\"title-bracket\">&lt;</span>
+                    Get In Touch
+                    <span class=\"title-bracket\">/&gt;</span>
+                </h2>
+                <div class=\"contact-card\">
+                    <div class=\"contact-content\">
+                        <div class=\"contact-info\">
+                            <div class=\"contact-item\">
+                                <div class=\"contact-icon\">
+                                    <i class=\"fas fa-envelope\"></i>
+                                </div>
+                                <div class=\"contact-details\">
+                                    <h3>Email</h3>
+                                    <a href=\"mailto:amitgaming8090@gmail.com\">amitgaming8090@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class=\"contact-item\">
+                                <div class=\"contact-icon\">
+                                    <i class=\"fas fa-phone\"></i>
+                                </div>
+                                <div class=\"contact-details\">
+                                    <h3>Phone</h3>
+                                    <a href=\"tel:9992636343\">+91 9992636343</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"social-links-large\">
+                            <a href=\"https://github.com/amitkumar1555\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"social-button\">
+                                <i class=\"fab fa-github\"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href=\"https://www.linkedin.com/in/amitkumar1555\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"social-button\">
+                                <i class=\"fab fa-linkedin\"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href=\"https://instagram.com/keir.irenic\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"social-button\">
+                                <i class=\"fab fa-instagram\"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class=\"footer\">
+            <div class=\"footer-content\">
+                <p>&copy; 2025 Amit Kumar. All rights reserved.</p>
+                <p class=\"footer-subtitle\"></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src=\"script.js\"></script>
+</body>
+</html>
